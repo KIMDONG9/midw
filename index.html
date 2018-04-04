@@ -1,10 +1,93 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>KDWID</title>
+		<title>midw</title>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" href="./images/con.png">
+		<link href="./css/style.css" rel="stylesheet" >
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 	</head>
-	<body>
-	<p>hello world</p>
+	<body ng-app="port" ng-controller="magik" ng-init="normald = true">
+		<div id="nev" >
+			<div class="domino">
+				<div id="fucon">
+					<a id ="logo">/midw</a>
+					<div id="cu">
+						<a class="ccu" href="#" ng-click="profI()">about</a>
+						<a class="ccu" href="#" ng-click="workS()">works</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="domino">
+			<div class="container">
+				<div id="marginshit" class="row" ng-if="!normald">
+					<div class="col-sm-6">
+						<img src="./images/prof3.jpg" id="prof" class="img-thumbnail">
+					</div>
+					<div id="pro_con" class="col-sm-6">
+						<h1 class="pro_h1">Dongwoo KIM</h1>
+						<p class="pro_contenu">
+						Dongwoo Kim is Lausanne based interaction designer from Korea. 
+						He brings imaginative miracles for everyone though his interactive works in mundane life. 
+						He was born in Seoul, Republic of Korea and studied Design&Space in ESAAA(L’Ecole Supérieure d’Art Annecy Alpes), France. Now he lives and works based in Lausanne, Switzerland where he is studying BA Média interaction design at ECAL(Ecole cantonale d'art de Lausanne).	 </p>
+						<a class="aa" href="https://www.instagram.com/mrmd1410/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+						<a class="aa" href="https://www.facebook.com/dongwoo.kim.7165331" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+						<a class="aa" href="mailto:mrmd1410@gmail.com?Subject=Hello%20Dongwoo" target="_top"><i class="far fa-envelope fa-2x"	aria-hidden="true" ></i></a>
+					</div>
+				</div>
+				<div id="ord" class="row" ng-if="normald">
+					<div class="kol12 col-sm-12">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/261764508?&title=0&color=ffffff&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="kol12 col-sm-12">	
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/262682503?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="kol12 col-sm-12">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/259763060?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="kol12 col-sm-12">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/235256384?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+						</div>
+					</div>
+					<div class="kol12 col-sm-12">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/263071013?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<p id="footinfo">© 2018 Dongwoo Kim</p>
+		</div>
 	</body>
+	<script>
+		var app = angular.module('port', []);
+		app.controller('magik', function($scope){
+			$scope.normald = true;
+			$scope.workS = function(){
+				$scope.normald = true;
+			};
+			$scope.profI = function(){
+				$scope.normald = false;
+			};
+		});
+
+
+
+	</script>
 </html>

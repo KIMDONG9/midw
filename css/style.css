@@ -1,0 +1,226 @@
+@charset "UTF-8";
+*{margin: 0px;padding: 0px;}
+@font-face{font-family:'ActualRegular';
+src:url('../webfont/Actual-Regular.eot');
+src:local(※), 
+url('../webfont/Actual-Regular.woff') format('woff');
+}
+@font-face{
+font-family:'fifty';
+src:url('../webfont/Fifty-Regular.eot');
+src:local(※), 
+url('../webfont/Fifty-Regular.woff') format('woff');
+}
+@font-face{
+font-family:'palais';
+src:url('../webfont/Palais-Palais.eot');
+src:local(※), 
+url('../webfont/Palais-Palais.woff') format('woff');
+}
+@font-face{
+font-family:'ActualMedium';
+src:url('../webfont/Actual-Medium.eot');
+src:local(※), 
+url('../webfont/Actual-Medium.woff') format('woff');
+}
+@font-face{
+font-family:'ActualBold';
+src:url('../webfont/Actual_Bold.eot');
+src:local(※), 
+url('../webfont/Actual_Bold.woff') format('woff');
+}
+@font-face{
+font-family:'ActualMediumItalic';
+src:url('../webfont/Actual-MediumItalic.eot');
+src:local(※), 
+url('../webfont/Actual-MediumItalic.woff') format('woff');
+}
+@font-face{
+font-family:'discord';
+src:url('../webfont/discord-Display.eot');
+src:local(※), 
+url('../webfont/discord-Display.woff') format('woff');
+}
+
+html,body{
+overflow-x: hidden;
+margin:0px;
+padding:0px;
+width: 100%;
+line-height:0px;
+height: 100%;
+}
+.aa{
+color: rgba(0,0,0,1);
+}
+.aa:hover{
+color: rgba(0,0,0,0.5);
+}
+.domino{
+margin: 0 auto;
+background-color: transparent;
+max-width: 1000px;
+min-height: 100%;
+}
+#nev
+{	
+margin-right: auto;
+margin-left: auto;
+width: 100%;
+height: 40px;
+top: 0;
+z-index: 2;
+position: fixed;
+background-color: rgba(255,255,255,1);
+border-bottom: solid black 1px;
+}
+#logo{
+width: 50%;
+text-decoration: none; font-family: ActualBold; 
+color: #000000;
+font-size: 24px;
+display: inline;
+}
+#cu {
+width: 50%;
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: inline;
+}
+li {
+display: inline;
+}
+.ccu{
+color: #000000;
+text-decoration: none;
+float: right;
+font-family: ActualRegular; color: #000000;
+margin-right: 5px;
+margin-left: 5px;
+margin-top: 7px;
+margin-bottom: 30px;
+}
+.ccu:hover, .ccu:focus{
+color: #000000;
+text-decoration: line-through;
+}
+#marginshit{
+margin-top: 40px;
+
+}
+#ord{
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.container{
+height: 100%;
+
+}
+#fucon{
+padding-right: 15px;
+padding-left: 15px;
+
+}
+.col-sm-6, .col-sm-9, .col-sm-3{
+margin-top: 35px;
+padding-right: 15px;
+padding-left: 15px;
+}
+.col-sm-12{
+border:solid black 1px;
+margin-top: 35px;
+margin-right: 15px;
+margin-left: 15px;
+}
+.kol12{
+padding-right: 0px !important;
+padding-left: 0px !important;
+}
+#prof{
+border:none;
+border-radius: 0px;
+padding: 0px;
+}
+.pro_h1{
+font-family: ActualBold; color: #000000; 
+font-size: 18px;	
+float: right;
+}
+.pro_contenu{
+float: right;
+font-family: ActualRegular; color: #000000;
+font-size: 18px;
+text-align: right;
+}
+.pro_contdi{
+float: right;
+font-family: ActualRegular; color: #000000;
+font-size: 14px;
+text-align: right;
+}
+.player{background-color: black;}
+#footer {
+position: relative;
+left: 0;
+bottom: 0;
+height: 26px;
+width: 100%;
+background-color: rgba(255,255,255,1);
+border-top: solid black 1px;
+text-align: center;
+}
+#footinfo{
+color: #000000;
+text-decoration: none;
+font-family: ActualRegular; color: #000000;
+font-size: 14px;
+margin-top: 14px;
+margin-bottom: 7px;
+}
+.fa-2x{
+margin-right: 5px;
+margin-left: 5px;
+display: inline;
+float: right;
+text-align: right;
+}
+.choo{
+position: absolute;
+z-index: 1;
+margin:0px;
+padding: 0px;
+width: 10px;
+height: 100%;
+left: 0;
+border-right:solid black 1px;
+background-color: rgba(255,255,255,1);
+}
+
+@media (max-width: 600px){
+#marginshit{
+margin-top: 40px;
+margin-bottom: 40px;
+}
+#ord{
+margin-top: 40px;
+margin-bottom: 40px;
+}
+.pro_h1{
+float: left;
+}
+.pro_contenu{
+text-align: left;
+float: left;
+}
+.pro_contdi{
+float: left;
+text-align: left;
+}
+.fa-2x{
+float: left;
+text-align: left;
+}
+} 
