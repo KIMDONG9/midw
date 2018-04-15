@@ -50,6 +50,28 @@ width: 100%;
 line-height:0px;
 height: 100%;
 }
+.na{
+	color: white;
+	width: 75px;
+	height: 75px;
+	text-decoration: none;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	border: solid  black 1px;
+	border-radius: 50%;
+	display: none;
+    position:fixed;
+    bottom: 10px;
+    right: 10px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	z-index: 5;
+}
+.st1{fill:#ffffff;}
 .aa{
 color: rgba(0,0,0,1);
 }
@@ -201,6 +223,9 @@ background-color: rgba(255,255,255,1);
 }
 
 @media (max-width: 600px){
+.na{
+	display: inherit;
+}
 #marginshit{
 margin-top: 40px;
 margin-bottom: 40px;
