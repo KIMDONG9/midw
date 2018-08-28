@@ -17,13 +17,13 @@
 
 <body ng-app="port" ng-controller="magik" ng-init="normald = true">
     <div class="na">
-        <a ng-click="minus()"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="#nev"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 90 40" style="enable-background:new 0 0 90 40;" xml:space="preserve">
 				<polygon class="st1" points="70.4,40 45,12.8 19.6,40 "/>
 				</svg>
 			</a>
 
-        <a ng-click="plus()"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="#footer"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			viewBox="0 0 90 40" style="enable-background:new 0 0 90 40;" xml:space="preserve">
 				<polygon class="st1" points="19.6,5 45,32.2 70.4,5 "/>
 				</svg>
@@ -57,9 +57,39 @@
                 </div>
             </div>
             <div id="ord" class="row" ng-if="normald">
-                <div ng-repeat="num in nums | orderBy: 'created_at':true" class="kol12 col-sm-12">
+                <div class="kol12 col-sm-12">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" id="num{{$index}}" ng-src="{{trustSrc(num.srcN)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/265377658?&title=0&color=ffffff&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/261764508?&title=0&color=ffffff&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/262682503?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/259763060?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/235256384?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/263071013?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
+                    </div>
+                </div>
+                <div class="kol12 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/263195146?&title=0&color=000000&badge=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -71,67 +101,32 @@
 </body>
 <script>
     var app = angular.module('port', []);
-    app.controller('magik', function($scope, $http, $sce) {
-        $http.get("./work.json").then(function(response) {
-            $scope.nums = response.data;
-            console.log("nums length = " + $scope.nums.length);
-            $scope.movecount = 1;
-
-            $scope.minus = function() {
-                $scope.movecount = $scope.movecount - 1;
-                if ($scope.movecount < 0) {
-                    $scope.movecount = 0;
-                }
-                console.log("num " + $scope.movecount);
-                var elmnt = document.getElementById("num" + "" + $scope.movecount + "");
-                elmnt.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-            $scope.plus = function() {
-                $scope.movecount = $scope.movecount + 1;
-                if ($scope.movecount > $scope.nums.length) {
-                    $scope.movecount = $scope.nums.length;
-                }
-                console.log("num " + $scope.movecount);
-                var elmnt = document.getElementById("num" + "" + $scope.movecount + "");
-                elmnt.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
-        });
-
+    app.controller('magik', function($scope) {
         $scope.normald = true;
-
         $scope.workS = function() {
             $scope.normald = true;
         };
         $scope.profI = function() {
             $scope.normald = false;
         };
-        $scope.trustSrc = function(src) {
-            return $sce.trustAsResourceUrl(src);
-        }
     });
-
-
-    // $(document).ready(function() {
-    //     $('body').scrollspy({
-    //         target: ".na",
-    //         offset: 50
-    //     });
-    //     $(".na a").on('click', function(event) {
-    //         if (this.hash !== "") {
-    //             event.preventDefault();
-    //             var hash = this.hash;
-    //             $('html, body').animate({
-    //                 scrollTop: $(hash).offset().top
-    //             }, 800, function() {
-    //                 window.location.hash = hash;
-    //             });
-    //         }
-    //     });
-    // });
+    $(document).ready(function() {
+        $('body').scrollspy({
+            target: ".na",
+            offset: 50
+        });
+        $(".na a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function() {
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
 </script>
 
 </html>
