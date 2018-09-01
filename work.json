@@ -32,5 +32,10 @@
         "workId": 7,
         "workN": "Faux Bourdon",
         "srcN": "https://player.vimeo.com/video/265377658?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
+    },
+    {
+        "workId": 8,
+        "workN": "Shoebox 2018",
+        "srcN": "https://player.vimeo.com/video/286055677?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
     }
 ]
