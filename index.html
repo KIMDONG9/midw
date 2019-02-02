@@ -48,15 +48,23 @@
                 </div>
                 <div id="pro_con" class="col-sm-6">
                     <h1 class="pro_h1">Dongwoo KIM</h1>
-                    <p class="pro_contenu">My name is Dongwoo Kim, I’m Lausanne, Switzerland ￼based visual interaction designer from Korea. I graduated from ECAL Ecole Cantonale D’Art de Lausanne, in Lausanne Switzerland from Visual Communication with a minor in Media Interaction
-                        Design. I’ve created and experienced a variety of tasks including web applications, interactive objects, installations and UI/UX through Design Thinking and various programming languages. </p>
+                    <p class="pro_contenu">My name is Dongwoo Kim, I’m visual interaction designer from Republic of Korea. I graduated from ECAL Ecole Cantonale D’Art de Lausanne, in Lausanne Switzerland from Visual Communication with a minor in Media Interaction Design. I’ve
+                        created and experienced a variety of tasks including web applications, interactive objects, installations and UI/UX through Design Thinking and various programming languages.  I am currently an Interaction Designer at Giantstep.
+                        And also I work at the Interaction Studio Reformation.ooo in Zurich, Switzerland.
+                    </p>
                     <a class="aa" href="https://www.instagram.com/mrmd1410/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
                     <a class="aa" href="https://www.facebook.com/dongwoo.kim.7165331" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a class="aa" href="mailto:mrmd1410@gmail.com?Subject=Hello%20Dongwoo" target="_top"><i class="far fa-envelope fa-2x"	aria-hidden="true" ></i></a>
+                    <a class="aa" href="mailto:mrmd1410@gmail.com?Subject=Hello%20Dongwoo" target="_top"><i class="far fa-envelope fa-s2x"></i></a>
                 </div>
             </div>
             <div id="ord" class="row" ng-if="normald">
                 <div ng-repeat="num in nums | orderBy: 'created_at':true" class="kol12 col-sm-12">
+                    <div class="divdisolve" ng-click="hides = ! hides" ng-show="!hides" id="numv{{$index}}">
+                        <h1 class="h1v">{{num.workN}}</h1>
+                        <img class="imgv" ng-src="{{trustSrc(num.img)}} ">
+                        <div class="backgr"></div>
+                    </div>
+
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" id="num{{$index}}" ng-src="{{trustSrc(num.srcN)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0"></iframe>
                     </div>
@@ -65,7 +73,7 @@
         </div>
     </div>
     <div id="footer">
-        <p id="footinfo">© 2018 Dongwoo Kim</p>
+        <p id="footinfo">© 2019 Dongwoo Kim</p>
     </div>
 </body>
 <script>
@@ -92,7 +100,7 @@
                 if ($scope.movecount > $scope.nums.length) {
                     $scope.movecount = $scope.nums.length;
                 }
-                console.log("num " + $scope.movecount);
+                console.log("num" + $scope.movecount);
                 var elmnt = document.getElementById("num" + "" + $scope.movecount + "");
                 elmnt.scrollIntoView({
                     behavior: 'smooth'
@@ -110,6 +118,10 @@
         };
         $scope.trustSrc = function(src) {
             return $sce.trustAsResourceUrl(src);
+        }
+        $scope.diappear = function(index) {
+            console.log("numv" + $scope.nums[index].workId);
+            document.getElementById('numv' + $scope.nums[index].workId).style.display = "hidden";
         }
     });
 

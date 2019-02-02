@@ -1,5 +1,5 @@
 [{
-        "workId": 1,
+        "workId": "01",
         "workN": "The esquisse project 2014-2016",
         "srcN": "https://player.vimeo.com/video/263195146?&title=0&color=000000&badge=0&byline=0&portrait=0"
     },
@@ -11,36 +11,43 @@
     {
         "workId": 3,
         "workN": "Numbers station",
-        "srcN": "https://player.vimeo.com/video/235256384?&title=0&color=000000&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/235256384?&title=0&color=000000&badge=0&byline=0&portrait=0",
+        "img": "../images/numberstation.png"
     },
     {
         "workId": 4,
         "workN": "Air memo",
-        "srcN": "https://player.vimeo.com/video/259763060?&title=0&color=000000&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/259763060?&title=0&color=000000&badge=0&byline=0&portrait=0",
+        "img": "../images/dammvvv.jpg"
     },
     {
         "workId": 5,
         "workN": "Bushes and Trees",
-        "srcN": "https://player.vimeo.com/video/262682503?&title=0&color=000000&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/262682503?&title=0&color=000000&badge=0&byline=0&portrait=0",
+        "img": "../images/bushes2.png"
     },
     {
         "workId": 6,
         "workN": "Emojibot version.1",
-        "srcN": "https://player.vimeo.com/video/261764508?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/261764508?&title=0&color=ffffff&badge=0&byline=0&portrait=0",
+        "img": "../images/sqmac.png"
     },
     {
         "workId": 7,
         "workN": "Faux Bourdon",
-        "srcN": "https://player.vimeo.com/video/265377658?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/265377658?&title=0&color=ffffff&badge=0&byline=0&portrait=0",
+        "img": "../images/fauxBourdon.png"
     },
     {
         "workId": 8,
         "workN": "Shoebox 2018",
-        "srcN": "https://player.vimeo.com/video/286055677?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/286055677?&title=0&color=ffffff&badge=0&byline=0&portrait=0",
+        "img": "../images/shoebox2.png"
     },
     {
         "workId": 9,
         "workN": "Moment Catcher",
-        "srcN": "https://player.vimeo.com/video/292086396?&title=0&color=ffffff&badge=0&byline=0&portrait=0"
+        "srcN": "https://player.vimeo.com/video/292086396?&title=0&color=ffffff&badge=0&byline=0&portrait=0",
+        "img": "../images/uncc2.png"
     }
 ]
