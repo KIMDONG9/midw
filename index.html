@@ -61,6 +61,7 @@
                 <div ng-repeat="num in nums | orderBy: 'created_at':true" class="kol12 col-sm-12">
                     <div class="divdisolve" ng-click="hides = ! hides" ng-show="!hides" id="numv{{$index}}">
                         <h1 class="h1v">{{num.workN}}</h1>
+                        <p class="p1v">{{num.workT}}</p>
                         <img class="imgv" ng-src="{{trustSrc(num.img)}} ">
                         <div class="backgr"></div>
                     </div>

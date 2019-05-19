@@ -278,6 +278,18 @@ li {
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
     position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 6;
+}
+
+.p1v {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: ActualBold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
     bottom: 5%;
     left: 5%;
     z-index: 6;
